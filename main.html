@@ -1,0 +1,335 @@
+<!--
+
+>> KISAYOL c : yorum satiri olusturma kisayolu
+>> KELIME ANLAMI keywords : Google aramasi yapildiginda bu kelimelere gore arama sonuclari cikar
+>> KELIME ANLAMI description(tanım) : site icerigiyle alakali keywordler
+>> TAG p : paragraf etiketi
+    >> style : yazdirilacak paragrafin stil belirlenmesi
+>> TAG pre(preformatted) : icine yazilan metni oldugu gibi aktarir
+>> KELIME ANLAMI lorem : rastgele kelimeler uretir, uretilecek kelime sayisi yanina yazilabilir
+>> KELIME ANLAMI attribute(oznitelik - baglanmak) : taglar icine yazilan tag'a ait ozellikler
+>> TAG hr(horizontal rule) : bir satir boyunca cizgi
+>> TAG br(break) : bir satir bosluk
+>> TAG strong : kelimeyi kalin yazma
+>> TAG b(bold) : kelimeyi kalin yazma
+>> TAG em(emphasize:vurgulanan) : kelimeyi italik yazma
+>> TAG small : icerisindeki metni kucultme
+>> TAG del(delete) : icerisindeki metnin ustunu cizme
+>> TAG ins(insert) : icerisindeki metnin altini cizme
+>> TAG sub(subscript) : icerisindeki metni asagidan yazma(H20-su)
+>> TAG sup(superscript) : icerisindeki metni yukaridan yazma
+>> TAG i : kelimeyi italik yazma
+>> TAG h1-6 : sayi kucuklugune gore baslik(header)
+>> TAG img : resim dosyasi(image)
+    >> src : kaynak(source)
+    >> alt(alternative) : kaynak bulunamadiginda
+    >> width : genislik
+    >> height : uzunluk
+>> TAG center : icindeki nesneyi sayfa ortasina hizalar
+>> KISAYOL  CTRL + Shift + K : imlecin bulundugu satiri silme
+>> KISAYOL  ALT + yukari - asagi : imlecin bulundugu satiri yukari asagi tasima
+>> TAG a : link ekler, acilis ve kapanis taglarinin arasinda href'den sonra tiklanacak yapi verilir
+>> href(hypertext reference) : gidilecek adres(url)
+>> target=_blank : yeni sayfada adrese gidilir
+>> TAG ol(ordinary list) : sirali liste
+    >> type : Sira numarasi index sekli
+>> TAG ul(unordinary list) : sirali olmayan liste
+>> TAG li(list) : liste elemani
+>> TAG table : tablo olusturmak icin kullanilir
+    >> border : cerceve kalinlik piksel miktari
+>> TAG tr(table row) : tabloda satir olusturur
+>> TAG th (table header) : tabloda basliklarin belirginligi icin kullanilir
+    >> colspan(span:uzatmak) : icine verilen miktarda sutunu birlestirir
+    >> rowsspan : icine verilen miktarda satiri birlestirir
+>> TAG td(table data) : olusturulan tablo satirina veri girisi icin kullanilir
+>> KISAYOL Alt + Shift + F : kod dosyasini duzenler
+>> TAG div(division) : Belirli bolumu ayirip islem yapilmasini saglar
+>> class olusturulurken "." kullanilir. Icine class ozellikleri yazilir
+    >> text-align(align:hizalama) : metni hizalama
+    >> margin-top/bottom : ilgili kisimdan(division) altta veya ustte 
+    ne kadar bosluk birakilacagi belirlenir
+>> TAG form : form olusturmayi saglar
+>> TAG input : kullanicidan girdi alir
+    >> type="text" : metin turunde girdi
+        >> placeholder : form kutucugu icersine onbilgi yazar
+    >> type="password" : girdi alirken karakter gizlenmesi
+    >> type="e-mail" : girdinin e-mail turunde alinmasi
+    >> type="checkbox" : tik kutucugu
+    >> type="radio" : secenek kutucugu
+        >> name : bu attibute ile radio formlari birbirine baglayarak teksecim yaptirilir
+        >> checked : default secili olarak gelme
+    >> type="file" : dosya turunde girdi alinmasi
+    >> type="submit" : gonderme butonu
+        >> value : buton icine yazdirilacak metin
+    >> type="reset" : ayni form icinde yazilmis olan girdiler sifirlanmasi
+    >> type="date" : tarih girdisi alan takvim
+>> TAG textarea : metin icin alan acar
+    rows : acilan alanin satir sayisi
+    cols : acilan alanin sutun sayisi
+>> TAG select : secim yaptirilacak panel
+>> TAG option :  secim yaptirilacak panel secenekleri
+>> TAG iframe : farkli bir web sayfasini yerlestirme
+    >> src : yerlestirilecek web sayfa adresi
+
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="tr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, inital scale=1.0"> <!-- Responsive : duyarli -->
+    <meta name="keywords" content="Python">
+    <meta name="keywords" content="Java">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="Ozel Ders">
+    <meta name="description" content="Birebir Ders">
+
+    <title>My Webpage</title> <!-- Yorum Satiri-->
+
+    <style>
+        .divOzellik {
+            width: 40%;
+            height: 200px;
+            background-color: tomato;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .class2 {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(11, 226, 208);
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+<!--
+        Yorum
+        Satirlari
+-->
+
+<body>
+    <!-- Body baslangici-->
+    <p>Ilk Satir</p>
+    <p>aasd</p>
+    <p>
+        A
+        B
+        C
+        D
+    </p> <!-- Paragraf tagi -->
+    <p>Lorem, ipsum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo cumque et nesciunt modi voluptate iusto delectus
+        mollitia obcaecati provident! Repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sint totam, harum labore, ullam iusto, distinctio
+        ratione sapiente enim deserunt asperiores laborum architecto cum ducimus ipsa rerum error culpa mollitia!</p>
+    <br> <!-- Bir bosluk (break) -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus rerum sapiente. Quae quos aperiam ab
+        assumenda tempore iste necessitatibus alias molestiae velit. Reiciendis deserunt laborum, omnis totam
+        praesentium illum!</p>
+
+    <p><strong>strong veya b tagi ile kalin metin</strong></p>
+    <p><strong>kalin</strong> <b>kalin</b></p>
+    <p>Lorem, <strong>ipsum</strong> dolor.</p>
+
+    <p><em>em veya i tagi ile italik yazma</em></p>
+    <p><i>italik</i> <em>italik</em></p>
+    <p>Lorem, <em>ipsum</em> dolor.</p>
+
+    <p>mark etiketiyle isaretleme <mark>(desteklenmedigi icin ipucu cikmiyor)</mark></p>
+    <p><mark>isaretli metin</mark></p>
+
+    <hr> <!-- Cizgi cekme -->
+
+    <h1>Yusuf</h1>
+    <h2>İNCİ</h2>
+    <h3>hata</h3>
+    <br>
+    <hr>
+    <br>
+    <!-- Alttaki ikili ayni semantikte -->
+    <p><strong>deneme</strong></p>
+    <p>
+        <strong>
+            deneme
+        </strong>
+    </p>
+
+    <img src="resim.jpg" alt="Resim bulunamadi" width="350" height="360">
+
+    <center><img src="https://cdn.ntvspor.net/4f1483b0cf804605b4c0f60688e87f89.jpg?mode=crop&w=940&h=626"
+            alt="Resim yok"></center>
+    <center>
+        <p>YUSUF</p>
+    </center>
+    <hr>
+    <hr>
+
+    Linke gitmek icin <a href="https://www.google.com.tr"> tiklayiniz</a>
+    <p>Linke yeni sayfada gitmek icin <a href="https://www.google.com.tr" target="_blank">tiklayiniz</a></p>
+
+    <center>
+        <!-- Ortaya konulacak obje -->
+        <p>
+            <!-- Yeni satir koyularak objeye baslanacak -->
+            <a href="https://www.galatasaray.org/anasayfa" target="_blank">
+                <!-- link tagi ve yeni pencerede gidilecek adres -->
+                <img src="/gs-icon.jpg" alt="Icon bulunamadi" width="49" height="49">
+                <!-- a acilis ve kapanis taglari arasina link olarak metin yerine resim verildi -->
+            </a>
+        </p>
+    </center>
+
+    <h3>Yapilacaklar</h3>
+    <ul>
+        <li>Iş</li>
+        <li>Sayginlik</li>
+        <li>Evlilik</li>
+    </ul>
+
+    <hr>
+
+    <h3>Diller</h3>
+    <ol type="1">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>HTML</li>
+    </ol>
+    <hr>
+    <ol type="I">
+        <li><img src="/python-icon.png" alt="Python icon bulunamadi" width="100" height="100"></li>
+        <br>
+        <li><img src="/java-icon.png" alt="Java icon bulunamadi" width="100" height="100"></li>
+        <br>
+        <li><img src="/c-sharp-icon.png" alt="C# icon bulunamadi" width="100" height="100"></li>
+        <br>
+        <li><img src="/html-icon.png" alt="HTML icon bulunamadi" width="100" height="100"></li>
+    </ol>
+    <hr>
+    <ol type="1">
+        <li>Ic Donanim Birimleri
+            <ol type="I">
+                <li>Anakart</li>
+                <li>Islemci</li>
+                <li>Bellek</li>
+            </ol>
+        </li>
+        <li>Dis Donanim Birimleri
+            <ol type="1">
+                <li> Monitor
+                    <ol type="a">
+                        <li>LCD</li>
+                        <li>LED</li>
+                    </ol>
+                </li>
+                <li>Klavye
+                    <ol type="i">
+                        <li>Standart</li>
+                        <li>Mekanik</li>
+                    </ol>
+                </li>
+                <li>Fare</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>ISIM</th>
+            <th>SOYISIM</th>
+            <th>YAS</th>
+        </tr>
+
+        <tr>
+            <td>Yusuf</td>
+            <td>INCI</td>
+            <td>22</td>
+        </tr>
+
+        <tr>
+            <td>Mehmet Akif</td>
+            <td>ARTUN</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+    <center>
+        <table border="2">
+            <tr>
+                <th colspan="3">
+                    ESYALAR
+                </th>
+            </tr>
+            <tr>
+                <td><i>Ev Dekorasyon</i></td>
+                <td>Avize</td>
+                <td><b>499</b></td>
+            </tr>
+            <tr>
+                <td><i>Ev Dekorasyon</i></td>
+                <td>Aspilator</td>
+                <td><b>1100</b></td>
+            </tr>
+            <tr>
+                <td><i>Beyaz Esya</i></td>
+                <td>Davlumbaz Firin</td>
+                <td><b>699</b></td>
+            </tr>
+        </table>
+    </center>
+    <br>
+
+    <div class="divOzellik">
+        <h2>My Page</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nihil accusamus
+        suscipit in quasi numquam recusandae ab excepturi corporis voluptate.
+    </div>
+
+    <div class="class2">
+        <center>
+            <h1>YUSUF</h1>
+        </center>
+    </div>
+
+    <hr>
+    <hr>
+
+    <form>
+        Adiniz: <input type="text">
+        <br>
+        Soyadiniz: <input type="text" placeholder="soyad">
+        <p> Sifreniz: <input type="password" placeholder="sifre"></p>
+        <p>E-mail: <input type="email" placeholder="E-mail"></p>
+        <p>Sozlesmeyi onayliyor musunuz? <input type="checkbox"></p>
+        <p>Kadin <input type="radio" name="cinsiyet"></p>
+        <p>Erkek <input type="radio" name="cinsiyet" checked="true"></p>
+        <p><input type="file"></p>
+        <p><input type="submit" value="Gonder"></p>
+        <p><input type="reset" value="Temizle"></p>
+        <p><textarea name="mesajInput" id="mesajId" cols="30" rows="10"></textarea></p>
+        <p>
+            Dil Seciniz :
+            <select>
+                <option>Python</option>
+                <option>C#</option>
+                <option>PHP</option>
+                <option>Fortran</option>
+            </select>
+        </p>
+        <p>Dogum Tarihi: <input type="date"></p>
+    </form>
+    <br>
+    <iframe src="http://enesbayram.net" width="500px" height="800px"></iframe>
+
+    <p style="color: red;"> Bu kirmizi bir metin</p>
+</body> <!-- Body Bitisi-->
+
+</html>
